@@ -1,4 +1,5 @@
 import { Blur } from '@/components/Blur'
+import { Copyright } from '@/components/Copyright'
 import { Hero } from '@/components/Hero'
 import { SignIn } from '@/components/SignIn'
 
@@ -10,6 +11,7 @@ export default function Home() {
         <Blur />
         <SignIn />
         <Hero />
+        <Copyright />
       </div>
 
       {/* Right */}
