@@ -1,8 +1,12 @@
+import { Blur } from '@/components/Blur'
+
 export default function Home() {
   return (
     <main className="grid min-h-screen w-screen grid-cols-2 bg-[url(../assets/bg-stars.svg)] bg-cover">
       {/* Left */}
-      <div className="relative flex flex-col items-start justify-between overflow-hidden  border-r border-white/10 px-10 py-6"></div>
+      <div className="relative flex flex-col items-start justify-between overflow-hidden  border-r border-white/10 px-10 py-6">
+        <Blur />
+      </div>
 
       {/* Right */}
       <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
