@@ -1,5 +1,6 @@
 import { Blur } from '@/components/Blur'
 import { Copyright } from '@/components/Copyright'
+import { EmptyMemories } from '@/components/EmptyMemories'
 import { Hero } from '@/components/Hero'
 import { SignIn } from '@/components/SignIn'
 import { Stripes } from '@/components/Stripes'
@@ -18,14 +19,7 @@ export default function Home() {
 
       {/* Right */}
       <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
-        <div className="flex flex-1 items-center justify-center">
-          <p className="w-[360px] text-center leading-relaxed">
-            Você ainda não criou nenhuma lembrança, comece a{' '}
-            <a href="#" className="hover:text-gray-50">
-              criar agora
-            </a>{' '}
-          </p>
-        </div>
+        <EmptyMemories />
       </div>
     </main>
   )
