@@ -50,6 +50,19 @@ module.exports = {
         },
       },
 
+      backgroundImage: {
+        stripes:
+          'linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 12.5%, transparent 12.5%, transparent)',
+      },
+
+      backgroundSize: {
+        stripes: '100% 8px',
+      },
+
+      fontSize: {
+        '5xl': '2rem',
+      },
+
       blur: {
         full: '194px',
       },

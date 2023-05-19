@@ -2,6 +2,7 @@ import { Blur } from '@/components/Blur'
 import { Copyright } from '@/components/Copyright'
 import { Hero } from '@/components/Hero'
 import { SignIn } from '@/components/SignIn'
+import { Stripes } from '@/components/Stripes'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <SignIn />
         <Hero />
         <Copyright />
+        <Stripes />
       </div>
 
       {/* Right */}
