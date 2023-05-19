@@ -1,4 +1,5 @@
 import { Blur } from '@/components/Blur'
+import { Hero } from '@/components/Hero'
 import { SignIn } from '@/components/SignIn'
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="relative flex flex-col items-start justify-between overflow-hidden  border-r border-white/10 px-10 py-6">
         <Blur />
         <SignIn />
+        <Hero />
       </div>
 
       {/* Right */}
