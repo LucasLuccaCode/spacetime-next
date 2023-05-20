@@ -18,7 +18,10 @@ export function Profile() {
 
       <p className="max-w-[140px] text-sm leading-snug text-gray-50">
         {name}
-        <a href="#" className="block text-red-500 hover:text-red-400">
+        <a
+          href="/api/auth/logout"
+          className="block text-red-500 hover:text-red-400"
+        >
           Sair
         </a>
       </p>
