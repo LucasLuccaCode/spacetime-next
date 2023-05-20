@@ -1,4 +1,12 @@
 import { ReactNode } from 'react'
+import { cookies } from 'next/headers'
+
+import { Blur } from '@/components/Blur'
+import { Copyright } from '@/components/Copyright'
+import { Hero } from '@/components/Hero'
+import { SignIn } from '@/components/SignIn'
+import { Stripes } from '@/components/Stripes'
+import { Profile } from '@/components/Profile'
 
 import './globals.css'
 import {
@@ -21,12 +29,28 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  const isAuthenticated = cookies().has('token')
+
   return (
     <html lang="pt-Br">
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100`}
       >
-        {children}
+        <main className="grid min-h-screen w-screen grid-cols-2 bg-[url(../assets/bg-stars.svg)] bg-cover">
+          {/* Left */}
+          <div className="relative flex flex-col items-start justify-between overflow-hidden  border-r border-white/10 px-10 py-6">
+            <Blur />
+            {isAuthenticated ? <Profile /> : <SignIn />}
+            <Hero />
+            <Copyright />
+            <Stripes />
+          </div>
+
+          {/* Right */}
+          <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover">
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   )
