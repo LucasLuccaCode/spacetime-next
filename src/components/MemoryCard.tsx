@@ -1,10 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
 import dayjs from 'dayjs'
+import ptBr from 'dayjs/locale/pt-br'
+
 import { ArrowRight } from 'lucide-react'
 
 import { IMemory } from '@/app/page'
+
+dayjs.locale(ptBr)
 
 interface MemoryCardProps {
   memory: IMemory

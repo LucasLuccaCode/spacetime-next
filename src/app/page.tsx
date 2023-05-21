@@ -1,13 +1,9 @@
 import { cookies } from 'next/headers'
-import dayjs from 'dayjs'
-import ptBr from 'dayjs/locale/pt-br'
 
 import { api } from '@/lib/api'
 
 import { EmptyMemories } from '@/components/EmptyMemories'
 import { MemoryCard } from '@/components/MemoryCard'
-
-dayjs.locale(ptBr)
 
 export interface IMemory {
   id: string
