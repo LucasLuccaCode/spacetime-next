@@ -8,7 +8,8 @@ import { IMemory } from '@/app/page'
 
 import { api } from '@/lib/api'
 
-import { ChevronLeft, Edit, Delete } from 'lucide-react'
+import { ChevronLeft, Edit } from 'lucide-react'
+import { DeleteButton } from '@/components/DeleteButton'
 
 dayjs.locale(ptBr)
 
@@ -58,10 +59,7 @@ export default async function Memory({ params }: IMemoryProps) {
       </p>
 
       <div className="flex items-center gap-4">
-        <button className="flex items-center gap-2 rounded bg-red-700 px-5 py-2 text-xs font-bold text-gray-50 transition-colors hover:bg-red-600">
-          <Delete />
-          <span>Deletar</span>
-        </button>
+        <DeleteButton memoryId={memory.id} />
         <button className="flex items-center gap-2 rounded bg-yellow-400 px-5 py-2 text-xs font-bold text-gray-500 transition-colors hover:bg-yellow-300">
           <Edit />
           <span>Editar</span>
