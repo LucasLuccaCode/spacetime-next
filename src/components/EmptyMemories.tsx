@@ -5,7 +5,7 @@ export function EmptyMemories() {
         Você ainda não criou nenhuma lembrança, comece a{' '}
         <a href="#" className="hover:text-gray-50">
           criar agora
-        </a>{' '}
+        </a>
       </p>
     </div>
   )
