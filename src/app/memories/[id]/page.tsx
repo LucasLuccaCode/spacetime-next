@@ -4,7 +4,7 @@ import dayjs from 'dayjs'
 import ptBr from 'dayjs/locale/pt-br'
 import { cookies } from 'next/headers'
 
-import { IMemory } from '@/app/page'
+import { IMemory } from '@/types/memory'
 
 import { api } from '@/lib/api'
 
